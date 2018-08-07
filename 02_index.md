@@ -6,7 +6,7 @@
     <div id="app">
       {{message}}
     </div>
-    
+
     <script>
       var app = new Vue({
         el: '#app',
@@ -22,7 +22,7 @@
         내 위에 잠시 마우스를 올리면 동적으로 바인딩 된 title을 볼 수 있습니다!
       </span>
     </div>
-    
+
     <script>
       var app2 = new Vue({
         el: '#app-2',
@@ -34,7 +34,7 @@
     ```
     + v-bind 속성을 **디렉티브**라고 한다. vue는 디렉티브의 접두어를 v-로 사용한다.
     + Vue로 생성 된 app, app2에 **변수명.{{data 내의 키}}** 로 접근 시 data 키에 등록된 변수에 접근할 수 있다.
-    
+
 ### 조건문과 반복문
 * if문의 사용
     ```
@@ -42,7 +42,7 @@
       <!-- data.seen이 true이므로 p 엘리먼트가 렌더링된다 -->
       <p v-if="seen">이제 나를 볼 수 있어요</p>
     </div>
-    
+
     <script>
       var app3 = new Vue({
         el: '#app-3',
@@ -62,7 +62,7 @@
         </li>
       </ol>
     </div>
-    
+
     <script>
       var app4 = new Vue({
         el: '#app-4',
@@ -76,7 +76,7 @@
       })
       //app4.todos.push({text: 'New Item'}) //을 수행할 경우 목록에 신규로 추가된다.
     </script>
-    
+
 ### 사용자 입력 핸들링
 * v-on을 사용한 이벤트 리스닝
     ```
@@ -106,7 +106,7 @@
       <!-- input 내의 값이 바뀔 경우 data.message로 바인딩 되어있는 상단의 p의 내용이 함께 바뀐다. -->
       <input v-model="message">
     </div>
-    
+
     <script>
       var app6 = new Vue({
         el: '#app-6',
@@ -117,14 +117,14 @@
     <script>
 
     ```
-    
+
 ### 컴포넌트의 사용
 * 미리 정의된 옵션을 가진 Vue 인스턴스
 * 컴포넌트 등록 방법
     ```
     //template 내의 문자열이 dom으로 변환
     Vue.component('todo-item', {template: '<li>할일 하나.</li>})
-    
+
     //다른 컴포넌트에서 todo-item 컴포넌트를 사용
     <ol>
       <todo-item></todo-item>
@@ -138,11 +138,11 @@
       //todo로 전달받은 객체 내의 text를 바인딩
       template: '<li>{{ todo.text }}</li>'
     })
-    
+
     //다른 컴포넌트에 v-bind를 이용하여 값을 주입할 수 있다.
     <div id="app-7">
       <ol>
-        <!-- 
+        <!--
           groceryList를 반복하며 해당 item을 todo로 제공
           또한 각 구성 요소에 id값에 해당하는 "키"를 제공해야한다 (추후)
          -->
@@ -153,7 +153,7 @@
         </todo-item>
       </ol>
     </div>
-    
+
     <script>
       var app7 = new Vue({
         el: '#app-7',
@@ -179,4 +179,3 @@
         ```
 ***
 [목록으로](https://github.com/gh-shin/vue-doc-summary)
-
