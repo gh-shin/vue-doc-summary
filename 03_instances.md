@@ -51,12 +51,12 @@
 ### 인스턴스 라이프사이클 훅
 * Vue 인스턴스의 생성 주기에 맞춰 리스너를 지정할 수 있다.
     ```
-    new Vue({
+    var vm = new Vue({
       data: {
         a: 1
       },
       created: function () {
-        // `this` 는 vm 인스턴스를 가리킵니다.
+        // `this` 는 vm 인스턴스를 가리킴
         console.log('a is: ' + this.a)
       }
     })
