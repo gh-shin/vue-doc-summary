@@ -1,4 +1,4 @@
-## 2. 시작하기 [원문링크](https://kr.vuejs.org/v2/guide/index.html)
+## 2. [시작하기](https://kr.vuejs.org/v2/guide/index.html)
 ### 선언적 렌더링
 * [JSFiddle로 연습해보자](https://jsfiddle.net/)
 * Mustache를 이용한 표현식을 사용 가능
