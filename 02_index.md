@@ -103,6 +103,7 @@
     ```
     <div id="app-6">
       <p>{{ message }}</p>
+      <!-- input 내의 값이 바뀔 경우 data.message로 바인딩 되어있는 상단의 p의 내용이 함께 바뀐다. -->
       <input v-model="message">
     </div>
     
