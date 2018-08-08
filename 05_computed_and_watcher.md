@@ -1,4 +1,4 @@
-## 1. [계산된 속성과 감시자](https://kr.vuejs.org/v2/guide/computed.html)
+## 5. [계산된 속성과 감시자](https://kr.vuejs.org/v2/guide/computed.html)
 ### 계산된 속성
 > 기본 표현식의 장황함을 피하기 위해 **계산된 속성** 을 사용한다.
 
